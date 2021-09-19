@@ -7,7 +7,7 @@ public class IncrementadorImpl implements Incrementador{
 	@Override
 	public int incrementa(int valor) {
 		
-		System.out.println("Acessando a implementação da interface.");
+		System.out.println("Acessando a implementaÃ§Ã£o da interface.");
 		valor++;
 		return valor;
 		
