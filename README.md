@@ -1,4 +1,7 @@
 # spring-inversao-controle
+
+<div align="right"><small>Washington Santiago, silva2xx5@yahoo.com.br</small></div> 
+
 Um exercício de inversão de controle em Java 11, usando spring-context e spring-test.<br/>
 
 Temos uma interface, uma implementação da interface, um bean configuration e um teste da implementação. O Projeto demonstra a injeção de dependência com inversão de controle no Spring.<br/>
