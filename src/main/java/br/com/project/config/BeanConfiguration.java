@@ -10,7 +10,7 @@ import br.com.project.interfaces.Incrementador;
 public class BeanConfiguration {
 	
 	@Bean
-	public Incrementador incrementadorPort() {
+	public Incrementador incrementador() {
 		System.out.println("Adicionando Bean ao container");
 		return new IncrementadorImpl();
 	}
