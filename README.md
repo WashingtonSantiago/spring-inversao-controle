@@ -1,12 +1,12 @@
 # spring-inversao-controle
-
+.
 <div align="right"><small>Washington Santiago, silva2xx5@yahoo.com.br</small></div> 
 
-Um exercício de inversão de controle em Java 11, usando spring-context e spring-test.<br/>
+Um exercï¿½cio de inversï¿½o de controle em Java 11, usando spring-context e spring-test.<br/>
 
-Temos uma interface, uma implementação da interface, um bean configuration e um teste da implementação. O Projeto demonstra a injeção de dependência com inversão de controle no Spring.<br/>
+Temos uma interface, uma implementaï¿½ï¿½o da interface, um bean configuration e um teste da implementaï¿½ï¿½o. O Projeto demonstra a injeï¿½ï¿½o de dependï¿½ncia com inversï¿½o de controle no Spring.<br/>
 
-Anotações utilizadas:<br/>
+Anotaï¿½ï¿½es utilizadas:<br/>
 @Configuration<br/>
 @Bean<br/>
 @Override<br/>
@@ -16,36 +16,36 @@ Anotações utilizadas:<br/>
 @Test<br/>
 
 <br/><br/>
-<b>Descrição das classes:</b><br/><br/>
+<b>Descriï¿½ï¿½o das classes:</b><br/><br/>
 
 
 
 
 <b>Classe: BeanConfiguration</b><br/>
-A anotação @Configuration estimula o Spring a escanear esta classe de configuração.<br/>
-A anotação @Bean força a inclusão do bean no container/context.<br/>
-Notamos que o return devolve new objeto, implementação da interface, o que resolve o @Autowired na classe de testes, e também pode resolver em um possível controller, por exemplo.<br/><br/>
+A anotaï¿½ï¿½o @Configuration estimula o Spring a escanear esta classe de configuraï¿½ï¿½o.<br/>
+A anotaï¿½ï¿½o @Bean forï¿½a a inclusï¿½o do bean no container/context.<br/>
+Notamos que o return devolve new objeto, implementaï¿½ï¿½o da interface, o que resolve o @Autowired na classe de testes, e tambï¿½m pode resolver em um possï¿½vel controller, por exemplo.<br/><br/>
 
 
 <b>Classe: IncrementadorImpl</b><br/>
-Esta classe implementa a interface, sobrescrevendo o método #incrementa.<br/><br/>
+Esta classe implementa a interface, sobrescrevendo o mï¿½todo #incrementa.<br/><br/>
 
 
 <b>Classe: Incrementador</b><br/>
-Esta é a interface. Um Port na arquitetura hexagonal e arquitetura limpa, por exemplo.<br/><br/>
+Esta ï¿½ a interface. Um Port na arquitetura hexagonal e arquitetura limpa, por exemplo.<br/><br/>
 
 
 <b>Classe: IncrementadorTest</b><br/>
 Classe de teste. Poderia ser um controller em uma API Spring Boot.<br/>
-A anotação @Autowired injeta o Bean configurado na classe BeanConfiguration.<br/>
-Note que injetamos a interface, e spring traz uma instância da implementação, conforme o configuration.<br/>
-As anotações @RunWith(SpringJUnit4ClassRunner.class) e @ContextConfiguration(classes=BeanConfiguration.class) dizem ao spring para rodar os testes com o SpringJunit class, ao invés de Junit puro.<br/>
-As duas anotações são exigidas para que @Autowired surta efeito, e evite um NullPointerException na execução do teste.<br/><br/><br/><br/>
+A anotaï¿½ï¿½o @Autowired injeta o Bean configurado na classe BeanConfiguration.<br/>
+Note que injetamos a interface, e spring traz uma instï¿½ncia da implementaï¿½ï¿½o, conforme o configuration.<br/>
+As anotaï¿½ï¿½es @RunWith(SpringJUnit4ClassRunner.class) e @ContextConfiguration(classes=BeanConfiguration.class) dizem ao spring para rodar os testes com o SpringJunit class, ao invï¿½s de Junit puro.<br/>
+As duas anotaï¿½ï¿½es sï¿½o exigidas para que @Autowired surta efeito, e evite um NullPointerException na execuï¿½ï¿½o do teste.<br/><br/><br/><br/>
 
 
 
 
-<b>Referências</b><br/>
+<b>Referï¿½ncias</b><br/>
 
 @Configuration<br/>
 https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/annotation/Configuration.html<br/><br/>
